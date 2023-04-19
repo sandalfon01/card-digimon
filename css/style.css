@@ -1,5 +1,15 @@
 :root {
   --color1: #f8b78b;
+  --color2: #fcb173 ;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -20,6 +30,7 @@ body {
 .card {
   background-color: #fff;
   width: 328px;
+  overflow: hidden;
   border-radius: 16px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
 }
@@ -32,15 +43,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid var(--color2);
 }
 .card-body-contentimg {
   border: 5px solid #f67c55;
   border-radius: 50%;
   background-color: #fcd3c6;
   box-shadow: 0px -10px 20px #f67c55;
+  margin-top: -50px;
 }
 .card-body-contentimg-img {
   padding: 20px;
+}
+.card-body-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+.card-body-title span {
+  color: var(--color2);
 }
 .card-footer {
   display: flex;
@@ -48,4 +68,6 @@ body {
 }
 .card-footer-poder {
   text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }/*# sourceMappingURL=style.css.map */
