@@ -1,3 +1,11 @@
+:root {
+  --color1: #f8b78b;
+}
+
 body {
-  background-color: aqua;
+  font-family: sans-serif;
+  background-color: var(--color1);
+  background-image: url(../img/fondo3.png), url(../img/fondo2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 }/*# sourceMappingURL=style.css.map */
